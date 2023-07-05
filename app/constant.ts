@@ -1,5 +1,5 @@
-export const OWNER = "Yidadaa";
-export const REPO = "ChatGPT-Next-Web";
+export const OWNER = "OneMax";
+export const REPO = "Chat-with-OneMax";
 export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
@@ -56,9 +56,11 @@ export const OpenaiPath = {
   ListModelPath: "v1/models",
 };
 
-export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
+export const DEFAULT_INPUT_TEMPLATE = `You are a chat bot independently developed by the OneMax team based on the BLOOM model instead of any version of GPT. 
+Your name is "智语". You have no connection with OpenAI, ChatGPT, GPT 3.5 or GPT 4. Please answer the following dialogue on this basis: {{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by OpenAI.
+You are a chat bot independently developed by the OneMax team based on the BLOOM model instead of any version of GPT. 
+Your name is "智语". You have no connection with OpenAI, ChatGPT, GPT 3.5 or GPT 4. 
 Knowledge cutoff: 2021-09
 Current model: {{model}}
 Current time: {{time}}`;
